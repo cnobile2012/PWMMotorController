@@ -7,7 +7,7 @@ The MIT License (MIT)
 LTspice
 =======
 
-Spice files for testing the circuit virtually.
+Spice files for testing the circuit viability.
 
 =====
 KiCAD
