@@ -5,7 +5,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "PWM Motor Controller"
-Date "2020-12-19"
+Date "2020-12-21"
 Rev "1.0"
 Comp ""
 Comment1 ""
@@ -49,12 +49,12 @@ $EndComp
 $Comp
 L Device:R R6
 U 1 1 5FA75746
-P 5900 4400
-F 0 "R6" V 6000 4400 50  0000 C CNN
-F 1 "2.2M" V 5800 4400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5830 4400 50  0001 C CNN
-F 3 "~" H 5900 4400 50  0001 C CNN
-	1    5900 4400
+P 5850 4400
+F 0 "R6" V 5950 4400 50  0000 C CNN
+F 1 "2.2M" V 5750 4400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5780 4400 50  0001 C CNN
+F 3 "~" H 5850 4400 50  0001 C CNN
+	1    5850 4400
 	0    1    1    0   
 $EndComp
 $Comp
@@ -299,14 +299,10 @@ Wire Wire Line
 	5250 4150 5250 4600
 Connection ~ 5400 4150
 Wire Wire Line
-	6000 4050 6150 4050
+	6000 4050 6050 4050
 Wire Wire Line
-	6150 4050 6150 4200
-Connection ~ 6150 4200
-Wire Wire Line
-	6200 4000 6200 3150
-Wire Wire Line
-	6200 3150 2950 3150
+	6050 4050 6050 4200
+Connection ~ 6050 4200
 Wire Wire Line
 	2950 3150 2950 3750
 $Comp
@@ -325,12 +321,12 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP3
 U 1 1 6000D212
-P 6950 3950
-F 0 "TP3" H 7000 4000 50  0000 L CNN
-F 1 "PWM Out" V 7050 4200 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile" H 7150 3950 50  0001 C CNN
-F 3 "~" H 7150 3950 50  0001 C CNN
-	1    6950 3950
+P 6950 3850
+F 0 "TP3" H 7000 3900 50  0000 L CNN
+F 1 "PWM Out" V 7050 4100 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile" H 7150 3850 50  0001 C CNN
+F 3 "~" H 7150 3850 50  0001 C CNN
+	1    6950 3850
 	1    0    0    -1  
 $EndComp
 Connection ~ 6850 4100
@@ -423,16 +419,14 @@ Wire Wire Line
 Wire Wire Line
 	5400 4150 5400 4400
 Wire Wire Line
-	6150 4200 6150 4400
+	6050 4200 6050 4400
 Wire Wire Line
-	5750 4400 5400 4400
+	5700 4400 5400 4400
 Connection ~ 5400 4400
 Wire Wire Line
 	5400 4400 5400 4450
 Wire Wire Line
-	6150 4400 6050 4400
-Wire Wire Line
-	6150 4200 6200 4200
+	6050 4200 6200 4200
 $Comp
 L power:GND #PWR0101
 U 1 1 60348BF1
@@ -604,14 +598,24 @@ F 3 "~" H 6750 3450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6850 3650 6850 3950
-Wire Wire Line
-	6950 3950 6850 3950
-Connection ~ 6850 3950
-Wire Wire Line
-	6850 3950 6850 4100
-Wire Wire Line
 	6750 3650 6750 3750
 Wire Wire Line
 	6500 3750 6750 3750
+Wire Wire Line
+	6200 4000 6150 4000
+Wire Wire Line
+	6150 4000 6150 3150
+Wire Wire Line
+	6150 3150 2950 3150
+Wire Wire Line
+	6050 4400 6000 4400
+Wire Wire Line
+	6850 3650 6850 3900
+Wire Wire Line
+	6850 3900 6950 3900
+Wire Wire Line
+	6950 3900 6950 3850
+Connection ~ 6850 3900
+Wire Wire Line
+	6850 3900 6850 4100
 $EndSCHEMATC
