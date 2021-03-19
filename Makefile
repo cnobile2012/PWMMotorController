@@ -6,7 +6,7 @@ PREFIX		= $(shell pwd)
 PACKAGE_DIR	= $(shell echo $${PWD\#\#*/})
 DIR		= gerber
 NAME		= PWMMotorController-gerber
-RM_REGEX	= '(^.*~$$)|(.*\#$$)'
+RM_REGEX	= '(^.*~$$)|(^.*\#$$)|(^.*.log$$)|(^.*.net$$)|(^.*.raw$$)|(^.*.plt$$)|(^.*-bak$$)'
 RM_CMD		= find $(PREFIX) -regextype posix-egrep -regex $(RM_REGEX) \
                   -exec rm {} \;
 
@@ -21,6 +21,6 @@ zip	:
 	@(cd KiCad/; zip -r ../$(NAME).zip $(DIR))
 
 #----------------------------------------------------------------------
-clean   :
+clean	:
 	$(shell $(RM_CMD))
 	@rm -f $(NAME).zip $(NAME).tar.gz
