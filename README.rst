@@ -3,9 +3,8 @@ Voltage-Controlled PWM Motor Controller
 ***************************************
 The MIT License (MIT)
 
-**Don't use this board and schematic I've developed a much better and more
-  stable one here: 
-  `VoltageControlledPWM https://github.com/cnobile2012/VoltageControlledPWM`_.**
+**Don't use this board and schematic I've developed a much better and more stable one click below.** 
+`VoltageControlledPWM https://github.com/cnobile2012/VoltageControlledPWM`_
 
 =======
 LTspice
